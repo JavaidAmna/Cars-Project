@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider with Loader</title>
+<style>
+  /* Your existing styles */
+
+  .loader {
+    /* Loader styling */
+  }
+</style>
+</head>
+<body>
+<div class="car_image_container">
+  <!-- Your existing image slides here -->
+</div>
+
+<span class="arrow prev" onclick="controller(-1)">&#8592</span>
+<span class="arrow next" onclick="controller(+1)">&#8594</span>
+
+<script>
+const slides = document.querySelectorAll(".slide");
+let currentSlideIndex = 0;
+let isLoading = false;
+
+function showSlide(index) {
+  slides[currentSlideIndex].style.display = "none";
+  slides[index].style.display = "block";
+  currentSlideIndex = index;
+}
+
+function showLoader() {
+  const loader = slides[currentSlideIndex].querySelector(".loader");
+  loader.style.display = "block";
+  isLoading = true;
+}
+
+function hideLoader() {
+  const loader = slides[currentSlideIndex].querySelector(".loader");
+  loader.style.display = "none";
+  isLoading = false;
+}
+
+function controller(change) {
+  if (isLoading) {
+    return; // Prevent changing slide while loading
+  }
+
+  const newIndex = currentSlideIndex + change;
+  if (newIndex >= 0 && newIndex < slides.length) {
+    showLoader();
+    setTimeout(() => {
+      showSlide(newIndex);
+      hideLoader(); // Hide the loader after showing the image
+    }, 1000); // Adjust the timeout duration as needed
+  }
+}
+
+function loadImage(index) {
+  showLoader();
+  setTimeout(() => {
+    showSlide(index);
+    hideLoader();
+  }, 1000); // Adjust the timeout duration as needed
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(currentSlideIndex);
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  if (!isLoading) {
+    loadImage(currentSlideIndex - 1);
+  }
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  if (!isLoading) {
+    loadImage(currentSlideIndex + 1);
+  }
+});
+</script>
+</body>
+</html>

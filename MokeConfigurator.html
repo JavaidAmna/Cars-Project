@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MokeConfigurator.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="left">
+
+
+                <div class="car_image_container">
+
+                    <div class="slide">
+                        <img class="car_image" src="images/angle-1/shadow.png" alt="Shadow">
+                        <img class="car_image" src="images/angle-1/bp/black.png" alt="Body Part" id="BodyPart_first">
+                        <img class="car_image" src="images/angle-1/front_bumper/black.png" alt="Front Bumper"
+                            id="Frontbmp_angle1">
+                        <img class="car_image" src="images/angle-1/grill/black.png" alt="Grill" id="Grill_part">
+                        <img class="car_image" src="images/angle-1/rims/black.png" alt="Rims" id="rims_part">
+                        <img class="car_image" src="images/angle-1/rollbar/black.png" alt="RollBar" id="rollbar_part">
+                        <img class="car_image" src="images/angle-1/seats/black.png" alt="Seats" id="seats_part">
+                        <img class="car_image" src="images/angle-1/tops/black.png" alt="Tops" id="tops_part">
+                        <img class="car_image" src="images/angle-1/base.png" alt="">
+                        <div class="loader"></div>
+                    </div>
+                    <!-- angle-2 -->
+                    <div class="slide">
+
+                        <img class="car_image" src="images/angle-2/shadow.png" alt="Shadow">
+                        <img class="car_image" src="images/angle-2/back bumper/black.png" alt="Back bump"
+                            id="Back_bumper2">
+                        <img class="car_image" src="images/angle-2/bp/black.png" alt="Body Part" id="BodyPart-second">
+                        <img class="car_image" src="images/angle-2/front_bumper/black.png" alt="Front Bumper"
+                            id="Frontbmp_angle2">
+                        <img class="car_image" src="images/angle-2/rims/black.png" alt="Rims" id="rims_part2">
+                        <img class="car_image" src="images/angle-2/rollbar/black.png" alt="RollBar" id="rollbar_part2">
+                        <img class="car_image" src="images/angle-2/seats/black.png" alt="Seats" id="seats_part2">
+                        <img class="car_image" src="images/angle-2/tops/black.png" alt="Tops" id="tops_part2">
+                        <img class="car_image" src="images/angle-2/base.png" alt="Base">
+                        <div class="loader"></div>
+                    </div>
+                    <!-- angle3 -->
+                    <div class="slide">
+
+                        <img class="car_image" src="images/angle-3/shadow.png" alt="Shadow">
+                        <img class="car_image" src="images/angle-3/back bumper/black.png" alt="Back bump"
+                            id="Back_bumper3">
+                        <img class="car_image" src="images/angle-3/bp/black.png" alt="Body Part" id="BodyPart_third">
+                        <img class="car_image" src="images/angle-3/front_bumper/black.png" alt="Front Bumper"
+                            id="Frontbmp_angle3">
+                        <img class="car_image" src="images/angle-3/rims/black.png" alt="Rims" id="rims_part3">
+                        <img class="car_image" src="images/angle-3/rollbar/black.png" alt="RollBar" id="rollbar_part3">
+                        <img class="car_image" src="images/angle-3/seats/black.png" alt="Seats" id="seats_part3">
+                        <img class="car_image" src="images/angle-3/tops/black.png" alt="Tops" id="tops_part3">
+                        <img class="car_image" src="images/angle-3/base.png" alt="">
+                        <div class="loader"></div>
+                    </div>
+                    <!-- angle4 -->
+                    <div class="slide">
+                        <img class="car_image" src="images/angle-4/shadow.png" alt="Shadow">
+                        <img class="car_image" src="images/angle-4/back bumper/black.png" alt="Back bump"
+                            id="Back_bumper4">
+                        <img class="car_image" src="images/angle-4/bp/black.png" alt="Body Part" id="BodyPart_fourth">
+                        <img class="car_image" src="images/angle-4/front_bumper/black.png" alt="Front Bumper"
+                            id="Frontbmp_angle4">
+                        <img class="car_image" src="images/angle-4/rollbar/black.png" alt="RollBar" id="rollbar_part4">
+                        <img class="car_image" src="images/angle-4/seats/black.png" alt="Seats" id="seats_part4">
+                        <img class="car_image" src="images/angle-4/base.png" alt="">
+                        <img class="car_image" src="images/angle-4/tops/black.png" alt="Tops" id="tops_part4">
+                        <div class="loader"></div>
+                    </div>
+                    <!-- angle5 -->
+                    <div class="slide">
+                        <img class="car_image" src="images/angle-5/shadow.png" alt="Shadow">
+                        <img class="car_image" src="images/angle-5/bp/black.png" alt="Body Part" id="BodyPart_fifth">
+                        <img class="car_image" src="images/angle-5/front_bumper/black.png" alt="Front Bumper"
+                            id="Frontbmp_angle5">
+                        <img class="car_image" src="images/angle-5/grill/black.png" alt="Grill" id="Grill_part5">
+                        <img class="car_image" src="images/angle-5/rims/black.png" alt="Rims" id="rims_part5">
+                        <img class="car_image" src="images/angle-5/rollbar/black.png" alt="RollBar" id="rollbar_part5">
+                        <img class="car_image" src="images/angle-5/seats/black.png" alt="Seats" id="seats_part5">
+                        <img class="car_image" src="images/angle-5/base.png" alt="">
+                        <img class="car_image" src="images/angle-5/tops/black.png" alt="Tops" id="tops_part5">
+                        <div class="loader"></div>
+                    </div>
+
+                    <span class="arrow prev" onclick="controller(-1)">&#8592</span>
+                    <span class="arrow next" onclick="controller(+1)">&#8594</span>
+                </div>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="right">
+                <div class="cards">
+                    <!-- Body Part -->
+                    <div id="bp_card" class="card" class="color-selector" id="body-color">
+                        <div class="card-header">
+                            <p>Body Color</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color1"
+                                        onclick="changeBpColor('bp', 'black')" />
+                                    <label for="bp_color1" onclick="changeBpColor('bp', 'black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color2"
+                                        onclick="changeColor( 'bp', 'skyblue')" />
+                                    <label for="bp_color2" onclick="changeBpColor('bp', 'skyblue')">SkyBlue</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_skyblue">
+                                        <label for="orange">SkyBlue</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color3"
+                                        onclick="changeBpColor( 'bp', 'green')" />
+                                    <label for="bp_color3" onclick="changeBpColor('bp', 'green')">Green</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool3">
+                                        <label for="Green">Green</label>
+                                    </span>
+
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color4"
+                                        onclick="changeBpColor( 'bp', 'orange')" />
+                                    <label for="bp_color4" onclick="changeBpColor('bp', 'orange')">Orange</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool4">
+                                        <label for="orange">orange</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color5"
+                                        onclick="changeBpColor( 'bp', 'pink')" />
+                                    <label for="bp_color5" onclick="changeBpColor('bp', 'pink')">Pink</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color6"
+                                        onclick="changeBpColor( 'bp', 'red')" />
+                                    <label for="bp_color6" onclick="changeColor ('bp', 'red')">Red</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool6">
+                                        <label for="Red">Red</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color7"
+                                        onclick="changeBpColor( 'bp', 'white')" />
+                                    <label for="bp_color7" onclick="changeBpColor('bp', 'white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color8"
+                                        onclick="changeBpColor('bp', 'yellow')" />
+                                    <label for="bp_color8" onclick="changeBpColor('bp', 'yellow')">Yellow</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool8">
+                                        <label for="Yellow">Yellow</label>
+                                    </span>
+                                </div>
+                                <div class="color-option" style="width: 180px">
+                                    <input type="radio" name="color1" id="bp_color9"
+                                        onclick="changeBpColor( 'bp', 'camo')" />
+                                    <label for="bp_color9" onclick="changeBpColor( 'bp', 'camo')">Camo + $1,100</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool9">
+                                        <label for="Camo">Camo</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grill -->
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Grill</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color10"
+                                        onclick="changeGrillColor('black')" />
+                                    <label for="bp_color10" onclick="changeGrillColor('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color11"
+                                        onclick="changeGrillColor('skyblue')" />
+                                    <label for="bp_color11" onclick="changeGrillColor('skyblue')">SkyBlue</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_skyblue">
+                                        <label for="orange">SkyBlue</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color12"
+                                        onclick="changeGrillColor('camo')" />
+                                    <label for="bp_color12" onclick="changeGrillColor('camo')">Camo</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool9">
+                                        <label for="Camo">Camo</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color13"
+                                        onclick="changeGrillColor('green')" />
+                                    <label for="bp_color13" onclick="changeGrillColor('green')">Green</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool3">
+                                        <label for="Green">Green</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color14"
+                                        onclick="changeGrillColor('orange')" />
+                                    <label for="bp_color14" onclick="changeGrillColor('orange')">Orange</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color15"
+                                        onclick="changeGrillColor('pink')" />
+                                    <label for="bp_color15" onclick="changeGrillColor('pink')">Pink</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color16"
+                                        onclick="changeGrillColor('red')" />
+                                    <label for="bp_color16" onclick="changeGrillColor('red')">Red</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool6">
+                                        <label for="Red">Red</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color17"
+                                        onclick="changeGrillColor('white')" />
+                                    <label for="bp_color17" onclick="changeGrillColor('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option" style="width: 180px">
+                                    <input type="radio" name="color1" id="bp_color18"
+                                        onclick="changeGrillColor('yellow')" />
+                                    <label for="bp_color18" onclick="changeGrillColor('yellow')">Yellow</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool8">
+                                        <label for="Yellow">Yellow</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Front Bumper -->
+
+
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Front Bumper</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color19"
+                                        onclick="changeFrontBumper('black')" />
+                                    <label for="bp_color19" onclick="changeFrontBumper('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color20"
+                                        onclick="changeFrontBumper('skyblue')" />
+                                    <label for="bp_color20" onclick="changeFrontBumper('skyblue')">SkyBlue</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_skyblue">
+                                        <label for="orange">SkyBlue</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color21"
+                                        onclick="changeFrontBumper('green')" />
+                                    <label for="bp_color21" onclick="changeFrontBumper('green')">Green</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool3">
+                                        <label for="Green">Green</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color22"
+                                        onclick="changeFrontBumper('orange')" />
+                                    <label for="bp_color22" onclick="changeFrontBumper('orange')">Orange</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool4">
+                                        <label for="orange">orange</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color23"
+                                        onclick="changeFrontBumper('pink')" />
+                                    <label for="bp_color23" onclick="changeFrontBumper('pink')">Pink</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color24"
+                                        onclick="changeFrontBumper('red')" />
+                                    <label for="bp_color24" onclick="changeFrontBumper('red')">Red</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool6">
+                                        <label for="Red">Red</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color25"
+                                        onclick="changeFrontBumper('yellow')" />
+                                    <label for="bp_color25" onclick="changeFrontBumper('yellow')">Yellow</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool8">
+                                        <label for="Yellow">Yellow</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color26"
+                                        onclick="changeFrontBumper('white')" />
+                                    <label for="bp_color26" onclick="changeFrontBumper('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back Bumper -->
+
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Back Bumper</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color27"
+                                        onclick="changeBackBumper('black')" />
+                                    <label for="bp_color27" onclick="changeBackBumper('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color28"
+                                        onclick="changeBackBumper('skyblue')" />
+                                    <label for="bp_color28" onclick="changeBackBumper('skyblue')">SkyBlue</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_skyblue">
+                                        <label for="orange">SkyBlue</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color29"
+                                        onclick="changeBackBumper('green')" />
+                                    <label for="bp_color29" onclick="changeBackBumper('green')">Green</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool3">
+                                        <label for="Green">Green</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color30"
+                                        onclick="changeBackBumper('orange')" />
+                                    <label for="bp_color30" onclick="changeBackBumper('orange')">Orange</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool4">
+                                        <label for="orange">orange</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color31"
+                                        onclick="changeBackBumper('pink')" />
+                                    <label for="bp_color31" onclick="changeBackBumper('pink')">Pink</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color32"
+                                        onclick="changeBackBumper('red')" />
+                                    <label for="bp_color32" onclick="changeBackBumper('red')">Red</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool6">
+                                        <label for="Red">Red</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color33"
+                                        onclick="changeBackBumper('white')" />
+                                    <label for="bp_color33" onclick="changeBackBumper('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color34"
+                                        onclick="changeBackBumper('yellow')" />
+                                    <label for="bp_color34" onclick="changeBackBumper('yellow')">Yellow</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool8">
+                                        <label for="Yellow">Yellow</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- rims -->
+
+
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Rims</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color35"
+                                        onclick="changeRimsColor('black')" />
+                                    <label for="bp_color35" onclick="changeRimsColor('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+
+                                </div>
+
+                                <div class="color-option" style="width: 180px">
+                                    <input type="radio" name="color1" id="bp_color36"
+                                        onclick="changeRimsColor('silver')" />
+                                    <label for="bp_color36" onclick="changeRimsColor('silver')">Silver + $600</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seats -->
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Seats</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color37"
+                                        onclick="changeSeatsColor('black')" />
+                                    <label for="bp_color37" onclick="changeSeatsColor('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option" style="width: 180px">
+                                    <input type="radio" name="color1" id="bp_color38"
+                                        onclick="changeSeatsColor('white')" />
+                                    <label for="bp_color38" onclick="changeSeatsColor('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Roll Bar -->
+
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Roll Bar</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color39"
+                                        onclick="changeRollBarColor('black')" />
+                                    <label for="bp_color39" onclick="changeRollBarColor('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color40"
+                                        onclick="changeRollBarColor('skyblue')" />
+                                    <label for="bp_color40" onclick="changeRollBarColor('skyblue')">SkyBlue</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_skyblue">
+                                        <label for="orange">SkyBlue</label>
+                                    </span>
+                                </div>
+
+
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color41"
+                                        onclick="changeRollBarColor('green')" />
+                                    <label for="bp_color41" onclick="changeRollBarColor('green')">Green</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool3">
+                                        <label for="Green">Green</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color42"
+                                        onclick="changeRollBarColor('orange')" />
+                                    <label for="bp_color42" onclick="changeRollBarColor('orange')">Orange</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool4">
+                                        <label for="orange">orange</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color43"
+                                        onclick="changeRollBarColor('pink')" />
+                                    <label for="bp_color43" onclick="changeRollBarColor('pink')">Pink</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool5">
+                                        <label for="pink">Pink</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color44"
+                                        onclick="changeRollBarColor('red')" />
+                                    <label for="bp_color44" onclick="changeRollBarColor('red')">Red</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool6">
+                                        <label for="Red">Red</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color45"
+                                        onclick="changeRollBarColor('yellow')" />
+                                    <label for="bp_color45" onclick="changeRollBarColor('yellow')">Yellow</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool8">
+                                        <label for="Yellow">Yellow</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option" style="width: 180px">
+                                    <input type="radio" name="color1" id="bp_color46"
+                                        onclick="changeRollBarColor('white')" />
+                                    <label for="bp_color46" onclick="changeRollBarColor('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tops -->
+
+                    <div id="bp_card" class="card">
+                        <div class="card-header">
+                            <p>Tops</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="colors">
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color47"
+                                        onclick="changeTopsColor('black')" />
+                                    <label for="bp_color47" onclick="changeTopsColor('black')">Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1">Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color48"
+                                        onclick="changeTopsColor('full_black')" />
+                                    <label for="bp_color48" onclick="changeTopsColor('black')">Full Black</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color-tooltip" id="bp_color_tooltip1" />
+                                        <label for="bp_color_tooltip1" id="fontSize">Full Black</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color49"
+                                        onclick="changeTopsColor('full_tan')" />
+                                    <label for="bp_color49" onclick="changeTopsColor('full_tan')">Full Tan</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_tan">
+                                        <label for="White" id="fontSize">Full Tan</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color50"
+                                        onclick="changeTopsColor('tan')" />
+                                    <label for="bp_color50" onclick="changeTopsColor('tan')">Tan</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool_tan">
+                                        <label for="White">Tan</label>
+                                    </span>
+                                </div>
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color51"
+                                        onclick="changeTopsColor('white')" />
+                                    <label for="bp_color51" onclick="changeTopsColor('white')">White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White">White</label>
+                                    </span>
+                                </div>
+
+                                <div class="color-option">
+                                    <input type="radio" name="color1" id="bp_color52"
+                                        onclick="changeTopsColor('full_white')" />
+                                    <label for="bp_color52" onclick="changeTopsColor('full_white')">Full White</label>
+                                    <span class="hint">
+                                        <input type="radio" name="color1" id="bp_color_tool7">
+                                        <label for="White" id="fontSize">Full White</label>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Options -->
+
+                    <div id="front-bump_card" class="card10">
+
+                        <div class="card-body">
+                            <div class="additional">
+                                <div class="additional-option-1" id="additional-option-1">
+                                    <input type="checkbox" name="check" id="Wheel">
+                                    <label for="check" id="WoodText">WOOD STEERING WHEEL</label>
+                                    <div class="option-price-additional" id="price-wood">
+                                        <p>+ $495.00</p>
+                                    </div>
+                                </div>
+                                <div class="additional-option-2" id="additional-option-2">
+                                    <input type="checkbox" name="check" id="STEREO">
+                                    <label for="check">BLUETOOTH STEREO</label>
+                                    <div class="option-price-additional">
+                                        <p>+ $500.00</p>
+                                    </div>
+                                </div>
+                                <div class="additional-option-3" id="additional-option-3">
+                                    <input type="checkbox" name="check" id="CHARGER">
+                                    <label for="check">HIGH PERFORMANCE CHARGER</label>
+                                    <div class="option-price-additional">
+                                        <p>+ $995</p>
+                                    </div>
+                                </div>
+                                <div class="additional-option-4" id="additional-option-4">
+                                    <input type="checkbox" name="check" id="WEATHER">
+                                    <label for="check">ALL WEATHER CAR COVER </label>
+                                    <div class="option-price-additional">
+                                        <p>+ $750.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Add To Cart -->
+                    <div class="AddTO_Cart">
+                        <div class="heading">
+                            <h1 id="price1">$24,075.00</h1>
+                        </div>
+                        <div class="addCart" id="AddCart">
+                            <h2>Add To Cart</h2>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- From -->
+    <div class="form_card" id="form_card">
+
+
+        <div class="form_container">
+            <i class="fa fa-window-close" aria-hidden="true" id="close_window"></i>
+            <div class="header">
+                <h2>Order Form</h2>
+            </div>
+
+            <form id="form" class="form" onsubmit="return validation(event)">
+                <div class="flex" id="wrap">
+                    <div class="form-control" id="first">
+                        <label>FirstName</label>
+                        <input type="text" placeholder="Enter your FirstName" id="firstname" required>
+                    </div>
+                    <div class="form-control" id="second">
+                        <label>LastName</label>
+                        <input type="text" placeholder="Enter your LastName " id="lastname" required>
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-control" id="block_email">
+                    <label>Email Address</label>
+                    <input type="text" placeholder="Enter your email address" id="email" required>
+                </div>
+                <div class="form-control">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter your phone number" id="phone-no" required>
+                </div>
+                <div class="form-control" id="addition">
+                    <label>Additional Notes</label>
+                    <input type="text" placeholder="Enter your additional notes" id="pass" required>
+                </div>
+                <input type="Submit" value="Submit" class="btn" name="">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="MokeConfigurator.js"></script>
+</body>
+
+</html>
